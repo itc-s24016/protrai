@@ -9,3 +9,4 @@ elif score>=60:
     print("可")
 else:
     print("不可")
+
