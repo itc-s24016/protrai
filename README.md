@@ -1,1 +1,1 @@
-Programming Traning I にて使用するパブリックリポジトリです
+Programming Traning I にて使用するパブリックリポジトリです 
