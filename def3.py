@@ -5,3 +5,4 @@ def sayhello2(name):
     print("こんばんは"+name+"さん。")
 
 sayhello2("ふたば")
+
