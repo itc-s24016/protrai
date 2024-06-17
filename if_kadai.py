@@ -1,5 +1,5 @@
 #s24016
-#score判定プログラム
+#score判定するプログラム
 score=75
 if score>=80:
     print("優")
