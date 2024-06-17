@@ -6,4 +6,4 @@ def omikuji():
     return random.choice(kuji)
 
 kekka=omikuji()
-print("結果は"+kekka+"です")
+print("結果は",kekka,"です")
