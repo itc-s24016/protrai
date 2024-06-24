@@ -1,0 +1,2 @@
+#time_kadai.pyモジュールをimportで呼び出す
+import time_kadai
