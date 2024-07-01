@@ -5,7 +5,7 @@ import tkinter as tk #tkinterをtkと略する
 def name():
     a=entry.get()  #a=input()と同じ意味
     a=int(a)
-    lbl.config(text=f"{a*1.1}円です")
+    lbl.config(text=f"{int(a*1.1)}円です")
     
 root=tk.Tk()
 root.title("エントリーウィジェット")
