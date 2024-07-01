@@ -1,11 +1,11 @@
 #s24016
-#dispImage.py_ver2
+#画像をモノクロに変換
 import tkinter as tk
 import tkinter.filedialog as fd
 import PIL.ImageTk
 
-def dispPhoto(path):
-    newImage=PIL.Image.open(path).resize((300,300))
+def dispPhoto(path):#画像を読み込んでグレースケールに変換　
+    newImage=PIL.Image.open(path).resize((300,300)).convert("L")
     imageData=PIL.ImageTk.PhotoImage(newImage)
     imageLabel.configure(image=imageData)
     imageLabel.image=imageData
@@ -15,7 +15,7 @@ def openFile():
     if fpath:
         dispPhoto(fpath)
         print(fpath)
-        lbl2=tk.Label(text=fpath)
+        lbl2=tk.Label(text=fpath,font=("Helvetica",15))
         lbl2.pack()
 
 root=tk.Tk()

@@ -1,11 +1,11 @@
 #s24016
-#dispImage.py_ver2
+#画像をモザイク画像に変換
 import tkinter as tk
 import tkinter.filedialog as fd
 import PIL.ImageTk
 
-def dispPhoto(path):
-    newImage=PIL.Image.open(path).resize((300,300))
+def dispPhoto(path):#画像を読み込んでモザイク画像に変換　
+    newImage=PIL.Image.open(path).convert("L").resize((32,32)).resize((300,300))
     imageData=PIL.ImageTk.PhotoImage(newImage)
     imageLabel.configure(image=imageData)
     imageLabel.image=imageData
@@ -15,7 +15,7 @@ def openFile():
     if fpath:
         dispPhoto(fpath)
         print(fpath)
-        lbl2=tk.Label(text=fpath)
+        lbl2=tk.Label(text=fpath,font=("Helvetica",15))
         lbl2.pack()
 
 root=tk.Tk()
