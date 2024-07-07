@@ -1,4 +1,5 @@
 myenv/
 __pycache__/
+tmp/
 *.pyw
 *.exe
