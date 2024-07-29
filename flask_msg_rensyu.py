@@ -27,8 +27,15 @@ def submit():
     content = request.form["content"]#入力された内容を取得
     with open("data.txt", "a") as file:#data.txtに追記する
         file.write(f"\n{datetime.datetime.now()}\n{content}\n")
-        return f"書き込みました"
+        return """書き込み完了☆
+<br><a href="http://172.16.41.162:5000/msg">送信フォームにcomeback!</a>
+"""
 
+@app.route("/data")
+def data():
+    with open("data.txt","r") as file:
+        file.seek(0)
+        print(file.read(), end="")
     
 if __name__ == "__main__":
     app.run(host = "0.0.0.0", port = "5000", debug = True)
