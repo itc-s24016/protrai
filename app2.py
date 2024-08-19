@@ -16,7 +16,7 @@ lbl = tk.Label(text = "LABEL",font = ("Helvetica",20)) #  表示するテキス�
 btn = tk.Button(text = "PUSH",command = dispLabel,font = ("Helvetica",20)) # PUSHと描かれたボタンを作る
 
 btn.pack() # 配置する
-lbl.pack() # 配置する
+lbl.pack() # 配置する5
 lbl2 = tk.Label(text = " Label2",font = ("Helvetica",20)).pack()
 btn2 = tk.Button(text = "何もしないボタン",command = dispLabel2,font = ("Helvetica",20)).pack()
 tk.mainloop() # ウィンドウを表示
