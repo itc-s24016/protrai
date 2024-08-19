@@ -13,7 +13,7 @@ def index():
 def himitsu():
     return"""
 <h1>秘密のページ</h1>
-<a href="/">ホームに戻る</a>
+<button onclick="location.href='/'">ホームに戻る</button>
 """
 
 if __name__ == '__main__':#それぞれのIPアドレスでアクセスするように設定
